@@ -80,7 +80,7 @@ class crawler:
   
   # Add a link between two pages
   def addlinkref(self,urlFrom,urlTo,linkText):
-    words=self.separateWords(linkText)
+    words=self.separatewords(linkText)
     fromid=self.getentryid('urllist','url',urlFrom)
     toid=self.getentryid('urllist','url',urlTo)
     if fromid==toid: return
